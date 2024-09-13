@@ -2,8 +2,8 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 from con_rates_get import get_rates
-import matplotlib as plt
-
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
 
 root = tk.Tk()
 root.title("Currency conversion APP")
