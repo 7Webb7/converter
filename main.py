@@ -1,15 +1,20 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
+from con_rates_get import get_rates
+import matplotlib as plt
+
 
 root = tk.Tk()
 root.title("Currency conversion APP")
 
-currency_rates = {
-    "USD" : 1.0,
-    "EUR" : 1.3,
-    "JPN" : 0.75
-}
+rates = get_rates()
+
+currency = ["USD", "EUR", "RUB"]
+
+currency_rates = {c : rates['rates'][c] for c in currency}
+
+
 
 def convert_currency():
     try:
