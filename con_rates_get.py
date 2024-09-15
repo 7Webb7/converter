@@ -24,9 +24,9 @@ def get_historical_data(currency):
 
     return data
 
+#Функция построения графика
+#def build_graph():
+
+
 conversion_rates = get_rates()
 usd = conversion_rates['rates']['USD']
-print(usd)
-print(conversion_rates['rates'].keys())
-
-print(get_historical_data('RUB'))
